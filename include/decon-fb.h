@@ -18,15 +18,14 @@
  ****************************************************************************/
 #ifndef ___SAMSUNG_DECON_H__
 #define ___SAMSUNG_DECON_H__
+
 #define MAX_DECON_WIN (7)
 #define DECON_WIN_UPDATE_IDX MAX_DECON_WIN
 #define MAX_BUF_PLANE_CNT (3)
+
 typedef unsigned int u32;
-//#if defined(USES_ARCH_ARM64) || defined(USES_DECON_64BIT_ADDRESS)
-typedef uint64_t dma_addr_t;
-//#else
-//typedef uint32_t dma_addr_t;
-//#endif
+typedef uint32_t dma_addr_t;
+
 struct decon_win_rect {
   int x;
   int y;
